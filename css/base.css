@@ -8,11 +8,10 @@
 	padding:0px;
 }
 body{
-	width: 100%;
 	background-image: url('../images/wp3845489.jpg');
-	background-repeat:no-repeat;
-	background-position:center;
-	background-size : 1350px 670px;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-attachment:fixed;
 }
 ul li{
