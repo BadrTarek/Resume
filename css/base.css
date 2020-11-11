@@ -18,7 +18,7 @@ ul li{
 	list-style: none;
 }
 /*display:flex*/
-.loading , .navbar ul , .about ul , .about-me , .skills .skills-carousel , .skills-container ,
+.loading , .navbar ul , .about ul , .about-me ,.about-me  div:nth-child(2) div, .skills .skills-carousel , .skills-container ,
  .skills-container-group , .footer-container , .footer-container .footer-box:nth-child(1) , 
  .footer-container .footer-box:nth-child(2) ul{
 	-webkit-display: flex;
@@ -28,7 +28,7 @@ ul li{
 	display: flex;
 }
 /*justify-content:center*/
-.loading , .about ul , .about-me , .skills .skills-carousel ,
+.loading , .about ul , .about-me ,.about-me  div:nth-child(2) div , .skills .skills-carousel ,
 .footer-container .footer-box:nth-child(1), .footer-container .footer-box:nth-child(2) ul{
 	-webkit-justify-content: center;
 	-moz-justify-content: center;
@@ -71,7 +71,7 @@ ul li{
 	flex: none;
 }
 /*transition:all 0.5s*/
-.navbar ul  a , .navbar-dropdown button , .slide-content ul li , .about-me  div:nth-child(2) button , 
+.navbar ul  a , .navbar-dropdown button , .slide-content ul li , .about-me  div:nth-child(2) .download-cv , 
 .footer-container .footer-box:nth-child(2) ul:nth-child(1) li,
 .footer-container .footer-box:nth-child(2) ul:nth-child(2) li a {
 	-webkit-transition: all 0.5s;
@@ -87,7 +87,7 @@ ul li{
 /*background-color: #E66200*/
 .slide-content ul li:hover , .about ul .active ,  .slide div , .skill-card .ribbon,
  .footer-container .footer-box:nth-child(2) ul:nth-child(1) li:hover , 
- .about-me  div:nth-child(2) button
+ .about-me  div:nth-child(2) .download-cv
 {
 	background-color: #E66200;
 }
@@ -99,7 +99,7 @@ ul li{
 }
 /*color:#fff*/
 .loading div:nth-child(1) , .logo p , .navbar ul  a , .slide-show , .slide-content ul li  a  ,
-.about h1 , .about ul .active a , .about-me div:nth-child(2) h2 , .about-me  div:nth-child(2) button , 
+.about h1 , .about ul .active a , .about-me div:nth-child(2) h2 , .about-me  div:nth-child(2) .download-cv , 
 .experience h2 , .precentage-slide .experience-name , .slide div span , .skills h1 , 
 .skills-container-group .skill-card , .navbar-dropdown button , .slide-content h1 ,
 .footer-container .footer-box:nth-child(2) ul:nth-child(1) li a , 
@@ -526,10 +526,13 @@ ul li{
 	height: 100px;
 	line-height: 100px;
 }
-.about-me  div:nth-child(2) button{
+.about-me  div:nth-child(2) .download-cv{
 	width: 250px;
 	height: 50px;
 	border:none;
+	line-height: 50px !important;
+	text-decoration: none;
+	display: block;
 	-webkit-border-radius:10px  ;
     -moz-border-radius:10px  ;
     -ms-border-radius:10px  ;
@@ -537,7 +540,7 @@ ul li{
     border-radius:10px  ;
     font-size: 20px;
 }
-.about-me  div:nth-child(2) button:hover{
+.about-me  div:nth-child(2) .download-cv:hover{
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	-ms-transform: scale(1.1);
