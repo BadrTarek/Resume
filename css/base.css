@@ -45,7 +45,7 @@ ul li{
 	justify-content: space-around;
 }
 /*align-items:center*/
-.loading , .navbar ul  , .skills .skills-carousel , .skills-container, .footer-container ,
+.loading , .navbar ul  ,.about-me  div:nth-child(2) div,.skills .skills-carousel , .skills-container, .footer-container ,
 .footer-container .footer-box:nth-child(1) , .skills-container-group , 
 .footer-container .footer-box:nth-child(2) ul:nth-child(1) {
 	-webkit-align-items: center;
