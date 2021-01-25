@@ -20,7 +20,7 @@ ul li{
 /*display:flex*/
 .loading , .navbar ul , .about ul , .about-me ,.about-me  div:nth-child(2) div, .skills .skills-carousel , .skills-container ,
  .skills-container-group , .footer-container , .footer-container .footer-box:nth-child(1) , 
- .footer-container .footer-box:nth-child(2) ul{
+ .footer-container .footer-box:nth-child(2) ul , .projects .projects-cotainer , .projects .project-name ,.project-skills ul{
 	-webkit-display: flex;
 	-moz-display: flex;
 	-ms-display: flex;
@@ -29,7 +29,8 @@ ul li{
 }
 /*justify-content:center*/
 .loading , .about ul , .about-me ,.about-me  div:nth-child(2) div , .skills .skills-carousel ,
-.footer-container .footer-box:nth-child(1), .footer-container .footer-box:nth-child(2) ul{
+.footer-container .footer-box:nth-child(1), .footer-container .footer-box:nth-child(2) ul ,
+.projects .project-name , .project-skills ul{
 	-webkit-justify-content: center;
 	-moz-justify-content: center;
 	-ms-justify-content: center;
@@ -37,7 +38,7 @@ ul li{
 	justify-content: center;
 }
 /*justify-content:space-around*/
-.navbar ul , .footer-container , .skills-container-group{
+.navbar ul , .footer-container , .skills-container-group , .projects .projects-cotainer{
 	-webkit-justify-content: space-around;
 	-moz-justify-content: space-around;
 	-ms-justify-content: space-around;
@@ -47,7 +48,8 @@ ul li{
 /*align-items:center*/
 .loading , .navbar ul  ,.about-me  div:nth-child(2) div,.skills .skills-carousel , .skills-container, .footer-container ,
 .footer-container .footer-box:nth-child(1) , .skills-container-group , 
-.footer-container .footer-box:nth-child(2) ul:nth-child(1) {
+.footer-container .footer-box:nth-child(2) ul:nth-child(1) , .projects .projects-cotainer , .projects .project-name ,
+ .project-skills ul {
 	-webkit-align-items: center;
 	-moz-align-items: center;
 	-ms-align-items: center;
@@ -55,7 +57,7 @@ ul li{
 	align-items: center;
 }
 /*flex-wrap:wrap*/
-.about ul , .about-me , .skills .skills-carousel , .skills-container-group , .footer-container{
+.about ul , .about-me , .skills .skills-carousel , .skills-container-group , .footer-container , .project-skills ul{
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
@@ -73,7 +75,7 @@ ul li{
 /*transition:all 0.5s*/
 .navbar ul  a , .navbar-dropdown button , .slide-content ul li , .about-me  div:nth-child(2) .download-cv , 
 .footer-container .footer-box:nth-child(2) ul:nth-child(1) li,
-.footer-container .footer-box:nth-child(2) ul:nth-child(2) li a {
+.footer-container .footer-box:nth-child(2) ul:nth-child(2) li a , .projects .projects-cotainer .project-box{
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -85,7 +87,7 @@ ul li{
 	background-color: #121212;
 }
 /*background-color: #E66200*/
-.slide-content ul li:hover , .about ul .active ,  .slide div , .skill-card .ribbon,
+.slide-content ul li:hover , .about ul .active ,  .slide div , .ribbon,
  .footer-container .footer-box:nth-child(2) ul:nth-child(1) li:hover , 
  .about-me  div:nth-child(2) .download-cv
 {
@@ -100,10 +102,10 @@ ul li{
 /*color:#fff*/
 .loading div:nth-child(1) , .logo p , .navbar ul  a , .slide-show , .slide-content ul li  a  ,
 .about h1 , .about ul .active a , .about-me div:nth-child(2) h2 , .about-me  div:nth-child(2) .download-cv , 
-.experience h2 , .precentage-slide .experience-name , .slide div span , .skills h1 , 
+.experience h2 , .precentage-slide .experience-name , .slide div span , .skills h1 , .projects h1 , 
 .skills-container-group .skill-card , .navbar-dropdown button , .slide-content h1 ,
 .footer-container .footer-box:nth-child(2) ul:nth-child(1) li a , 
-.footer-container .footer-box:nth-child(2) ul:nth-child(2) li a:hover , .footer p{
+.footer-container .footer-box:nth-child(2) ul:nth-child(2) li a:hover , .footer p , .projects .project-name {
 	color:#fff;
 }
 /*color:#999999*/
@@ -113,14 +115,15 @@ ul li{
 	color: #999999;
 }
 /*font-family:"Roboto",sans-serif*/
-.loading , .navbar ul  a , .slide-content h1 , .about h1 , .skills h1 , .about-me div:nth-child(2) h2 ,
+.loading , .navbar ul  a , .slide-content h1 , .about h1, .projects h1 , .skills h1 , .about-me div:nth-child(2) h2 ,
 .experience h2  , .slide div span , .skills .skills-carousel button , 
 .skills-container-group .skill-card , .skill-card .skill-name , .footer p ,
-.footer-container .footer-box:nth-child(1) ul li , .footer-container .footer-box:nth-child(2) ul li a{
+.footer-container .footer-box:nth-child(1) ul li , .footer-container .footer-box:nth-child(2) ul li a ,
+.projects .projects-cotainer .project-box{
 	font-family: 'Roboto', sans-serif;
 }
 /*border-radius:8px*/
-.about ul li , .slide , .slide div , .skills-container-group .skill-card{
+.about ul li , .slide , .slide div , .skills-container-group .skill-card , .projects .projects-cotainer .project-box{
 	-webkit-border-radius:8px; 
 	-ms-border-radius:8px; 
 	-moz-border-radius:8px; 
@@ -136,7 +139,7 @@ ul li{
 	border-radius: 50%;
 }
 /*text-align:center*/
-.slide-content ul li , .about h1 , .skills h1  , .about ul , 
+.slide-content ul li , .about h1 , .skills h1, .projects h1  , .about ul ,
 .about-me div:nth-child(1) , .about-me  div:nth-child(2) div , 
 .footer-container .footer-box:nth-child(2) ul:nth-child(1) li{
 	text-align: center;
@@ -411,14 +414,14 @@ ul li{
 	background-color: rgba(18, 18, 18,0.6);
 	padding-bottom:30px; 
 }
-.about h1 , .skills h1 {
+.about h1 , .skills h1 , .projects h1 {
 	text-transform: uppercase;
 	margin: 0px;
 	height:80px;
 	line-height: 80px;
 	font-weight: 600;
 }
-.about h1 span , .skills h1 span {
+.about h1 span , .skills h1 span , .projects h1 span {
 	border-bottom:3px solid #E66200;
 	padding: 0px 20px 10px 20px;
 }
@@ -681,7 +684,7 @@ ul li{
 	overflow: hidden !important;
 	position: relative;
 }
-.skill-card .ribbon{
+.ribbon{
 	width: 100px ; 
 	height: 20px; 
 	position: absolute; 
@@ -711,6 +714,80 @@ ul li{
 		font-size: 16px !important;
 	}
 }
+/*****************************************************************/
+.projects{
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+.projects .projects-cotainer{
+	width: 100%;
+	height: auto;
+} 
+.projects .projects-cotainer .project-box{
+	width: 400px;
+	height:auto;
+	background-color: #121212;
+	padding: 2px;
+	margin: 10px;
+	border: 0.5px solid #777;
+	border-bottom: 5px solid #777;
+	overflow: hidden !important;
+	position: relative;
+}
+.projects .projects-cotainer .project-box:hover{
+	-webkit-transform: translateY(-3.5px);
+	-moz-transform: translateY(-3.5px);
+	-ms-transform: translateY(-3.5px);
+	-o-transform: translateY(-3.5px);
+	transform: translateY(-3.5px);
+	-webkit-box-shadow: 1px -2px 10px #777
+	-moz-box-shadow: 1px -2px 10px #777
+	-ms-box-shadow: 1px -2px 10px #777
+	-o-box-shadow: 1px -2px 10px #777
+	box-shadow: 1px -2px 10px #777
+}
+.projects .projects-cotainer .project-box a{
+	text-decoration:none;	
+}
+.project-box .ribbon{
+	margin: 0px;
+   	margin-left: -59px;
+    margin-top: 4px;
+}
+.projects .projects-cotainer .project-box .project-name{
+	width: 100%;
+	height: 100px;
+	font-weight: 600;
+	font-size: 30px;
+	border-bottom: 0.5px solid #E66200;
+}
+.project-skills{
+	width: 100%;
+	height: auto;
+}
+.project-skills ul{
+	-webkit-align-content: center;
+	-moz-align-content: center;
+	-ms-align-content: center;
+	-o-align-content: center;
+	align-content: center;
+	width: 100%;
+	height: 70px;
+	padding: 10px;
+}
+.project-skills ul li:after{
+	content:' , ';
+}
+.project-skills ul li:last-child:after{
+	content: '';
+}
+.project-skills ul li{
+	margin-right: 10px;
+	font-family: Time New Roman;
+	color:#999999;
+}
+/********************************************************************/
 .footer{
 	width: 100%;
 	min-height: 150px;
