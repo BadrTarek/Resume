@@ -1,48 +1,81 @@
 $(document).ready(function(){
 	setInterval(function(){
-		$(".loading").css("display","none");
+		$(".loading").removeClass("d-flex");		
+		$(".loading").addClass("d-none");
 	},2000);
-	var isOpen = false;
-	$("#navbar-dropdown").click(function(e){
-		e.preventDefault();
-		if(!isOpen){
-			$("#navbar").slideDown("slow");
-			$("#header").css("background","rgba(19, 18, 18,0.5)");
-			isOpen = true;
-		}else{
-			$("#navbar").slideUp("slow");
-			$("#header").css("background","none");
-			isOpen=false;
-		}
-	});
-	function landingPageSlide(){
-		var countOfCareers = $("#careers div").length;
-		var count = 1;
-		for(i=2 ; i<=countOfCareers ;i++)
+	var profile_open = "#about-me";
+	var active_link = "#about-me-link";
+	function profile_nav(nav_link , profile , e){
+		//e.preventDefault();
+		if(profile_open != profile)
 		{
-			$("#careers div:nth-child("+i+")").css('display','none');
-		};
-		$("#careers div:nth-child("+count+") h6").css("marginLeft","-200px;");
-		setInterval(function(){
-			$("#careers div:nth-child("+count+") h6").animate({
-				marginLeft:'+=1500px',
-			},2000,function(){
-				$("#careers div:nth-child("+count+")").css("display","none");
-
-				$("#careers div:nth-child("+count+") h6").css("margin-left","0px");
-				if(count==countOfCareers)
-					count = 1;
-				else
-					count++;
-				$("#careers div:nth-child("+count+") h6").css("marginLeft","-200px");
-				$("#careers div:nth-child("+count+")").css("display","block");
-				$("#careers div:nth-child("+count+") h6").animate({
-					marginLeft:"+=200px"
-				},650);
+			$(nav_link).parent().addClass("active");
+			$(active_link).parent().removeClass("active");
+			$(profile_open).fadeOut("slow",function(){
+				$(profile).fadeIn("slow");
 			});
-		},5000)
+			profile_open = profile;
+			active_link = nav_link;
+		}
 	}
-	landingPageSlide();
+	$("#about-me-link").click(function(e){
+		e.preventDefault();
+		profile_nav("#about-me-link" , "#about-me" , e);
+	});
+
+	$("#education-link").click(function(e){
+		e.preventDefault();
+		profile_nav("#education-link" , "#education" , e);
+	});
+
+	$("#skills-link").click(function(e){
+		e.preventDefault();
+		profile_nav("#skills-link" , "#skills" , e);
+	});
+
+	$("#about-me-nav").click(function(e){
+		profile_nav("#about-me-link" , "#about-me" , e);
+	});
+
+	$("#education-nav").click(function(e){
+		profile_nav("#education-link" , "#education" , e);
+	});
+
+	$("#skills-nav").click(function(e){
+		profile_nav("#skills-link" , "#skills" , e);
+	});
+	
+	$("#about-me-nav-footer").click(function(e){
+		profile_nav("#about-me-link" , "#about-me" , e);
+	});
+
+	$("#education-nav-footer").click(function(e){
+		profile_nav("#education-link" , "#education" , e);
+	});
+
+	$("#skills-nav-footer").click(function(e){
+		profile_nav("#skills-link" , "#skills" , e);
+	});
+
+
+
+
+	/*$("#education-link").click(function(e){
+		e.preventDefault();
+		$("#about-me-link").parent().removeClass("active");
+		$("#education-link").parent().addClass("active");
+		
+
+		$("#about-me").fadeOut("slow",function(){
+			$("#education").fadeIn("slow");
+		});
+
+	});*/
+
+
+
+
+	/*
 	function aboutMeFadeIn(){
 		$("#about-me-link").parent().addClass("active");
 		$("#experience-link").parent().removeClass("active");
@@ -57,8 +90,8 @@ $(document).ready(function(){
 		$("#about-me").fadeOut("slow",function(){
 			$("#experience").fadeIn("slow",function(){
 				$(".precentage-slide .slide div").each(function(){
-				 	$(this).css("width",$(this).attr("precentage"));
-				 });
+					$(this).css("width",$(this).attr("precentage"));
+				});
 			});
 		});
 	};
@@ -138,4 +171,5 @@ $(document).ready(function(){
 		});
 	}
 	skillsCarousel();
+	*/
 });

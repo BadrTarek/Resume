@@ -1,456 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
-		<link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
 		<link href="css/all.min.css" rel="stylesheet" type="text/css"/>
+		<link href="css/base.css" rel="stylesheet" type="text/css"/>
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv.min.js"></script>
 		<![endif]-->
-		<title>Resume</title>
-	</head>
-	<body>
-		<!--<div class="loading">
+        <title>Resume</title>
+    </head>
+    <body>
+        <!-- <div class="loading d-flex justify-content-center align-items-center">
 			<div>C</div> <div>V</div> 
-		</div>-->
-		<!-- Start Landing Page -->
-		<div class="landing-page">
-			<div id="header">
-				<div class="header">
-					<div class="logo">
-						<p>CV.</p>
-					</div>
-					<div class="navbar-dropdown">
-						<form action="">	
-							<button id="navbar-dropdown" >
-								<i class="fas fa-bars"></i>
-							</button>
-						</form>
-					</div>
-					<div id="navbar" class="navbar">
-						<ul>
-							<a href="#"><li>Home</li></a>
-							<a class="about-nav" href="#about"><li>About Me</li></a>
-							<a class="experience-nav" href="#about"><li>Experience</li></a>
-							<a href="#skills"><li>Skills</li></a>
-							<a href="#projects"><li>Projects</li></a>
-							<a href="#contact"><li>Contact</li></a>
-						</ul>
-					</div>
-				</div>
+		</div> -->
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="logo">
+                    <a class="navbar-brand" href="#">Resume.</a>
+                </div>
+                <button class="navbar-toggler"  data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" id="about-me-nav" href="#profile">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="education-nav" href="#profile">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="skills-nav" href="#profile">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work-experience">Work Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="profile">
+                <h4>Hello</h4>
+                <h1>I'm Badr Tarek Mohammed</h1>
+                <h6>Software Developer</h6>
+                <ul class="d-flex flex-row">
+                    <li class="d-flex justify-content-center align-items-center"><a class="d-flex justify-content-center align-items-center" target="_blank" href="https://www.facebook.com/badr.tarek.16"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="d-flex justify-content-center align-items-center"><a class="d-flex justify-content-center align-items-center" target="_blank" href="https://twitter.com/BadrTar02792023?s=08"><i class="fab fa-twitter"></i></a></li>
+                    <li class="d-flex justify-content-center align-items-center"><a class="d-flex justify-content-center align-items-center" target="_blank" href="https://github.com/BadrTarek"><i class="fab fa-github"></i></a></li>
+                    <li class="d-flex justify-content-center align-items-center"><a class="d-flex justify-content-center align-items-center" target="_blank" href="https://www.linkedin.com/in/badr-tarek-5778911b9"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
 			</div>
-			<div class="slide-show">
-				<div class="slide-content">
-					<h4>Hello</h4>
-					<h1>I'm Badr Tarek Mohammed</h1>
-					<div id="careers">
-						<div>
-							<h6>Full Stack Developer </h6>
-						</div>
-						<div>
-							<h6>Game Developer </h6>
-						</div>
-					</div>
-					<ul>
-						<li><a target="_blank" href="https://www.facebook.com/badr.tarek.16"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a target="_blank" href="https://twitter.com/BadrTar02792023?s=08"><i class="fab fa-twitter"></i></a></li>
-						<li><a target="_blank" href="https://github.com/BadrTarek"><i class="fab fa-github"></i></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/badr-tarek-5778911b9
-"><i class="fab fa-linkedin-in"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- End Landing Page -->
-		<!-- Start About Me-->
-		<div id="about" class="about">
-			<h1>
-				<span>About Me</span>
-			</h1>
-			<ul>
+
+        </header>
+
+        <section id="profile">
+            <div class="section-title">
+                <h1><span>About Me</span></h1>
+            </div>
+            <ul class="list-unstyled">
 				<li class="active">
-					<a id="about-me-link" href="#"><div>Who I am ? <i class="fas fa-thumbs-up"></i></div> </a>
+					<a id="about-me-link" class="text-decoration-none" href="#"><div>Who I am ? <i class="fas fa-thumbs-up"></i></div> </a>
 				</li>
 				<li>
-					<a id="experience-link" href="#"><div>My Experience</div></a>
+					<a id="education-link" class="text-decoration-none" href="#"><div><i class="fas fa-graduation-cap"></i> Education</div></a>
+				</li>
+				<li>
+					<a id="skills-link" class="text-decoration-none" href="#"><div><i class="fas fa-rocket"></i> Skills</div></a>
 				</li>
 			</ul>
-			<div id="about-me" class="about-me">
-				<div>
-					<img src="images/badr.jpg"/>
-				</div>
-				<div>
-					<h2><span>Badr Tarek</span> Mohammed</h2>
-					<p>
-						Bachelor of computer science in <a target="_blank" href="http://www.mti.edu.eg/">Modern University  For Technology & Information </a>.I am developer with skills in Programming. Eager to bring value to projects through hard work ,commitment to quality and developing my skills.Smart professional fluent in programming. Energetic individual educated in Computer Science.
-					</p>
-					<div>
-						<a target="_blank" class="download-cv" href="files/CV.pdf" download="files/CV.pdf">
-							Dowload CV <i class="fas fa-cloud-download-alt"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div id="experience" class="experience">
-				<h2><span>My <span>Experience</span></span></h2>
-				<div class="all-experiences">
-					<div class="precentage-slide">
-						<div class="experience-name">Web Development</div>
-						<div class="slide" >
-							<div precentage="100%">
-							</div>
-						</div>
-					</div>
-					<div class="precentage-slide">
-						<div class="experience-name">Game Development</div>
-						<div class="slide" >
-							<div precentage="100%">
-							</div>
-						</div>
-					</div>
-					<div class="precentage-slide">
-						<div class="experience-name">Desktop Application</div>
-						<div class="slide" >
-							<div precentage="100%">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End About Me-->
-		<!-- Start Skills -->
-		<div id="skills" class="skills">
-			<h1><span> Skills</span></h1>
-			<div class="skills-carousel">
-				<button class="back">
-					<i class="far fa-arrow-alt-circle-left"></i>
-				</button>
-				<div class="skills-container">
-					<div class="skills-container-group">
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Object Oriented Programming
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Data Structure
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								HTML
-							</div>
-							<div class="slide" >
-								<div precentage="95%">
-									<span>95%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								HTML5
-							</div>
-							<div class="slide" >
-								<div precentage="70%">
-									<span>70%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								CSS
-							</div>
-							<div class="slide" >
-								<div precentage="90%">
-									<span>90%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								CSS3
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								JavaScript
-							</div>
-							<div class="slide" >
-								<div precentage="70%">
-									<span>70%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								JavaScript DOM
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="skills-container-group">
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								JavaScript BOM
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Jquery
-							</div>
-							<div class="slide" >
-								<div precentage="90%">
-									<span>90%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Bootstrap
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								PHP
-							</div>
-							<div class="slide" >
-								<div precentage="75%">
-									<span>75%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Laravel
-							</div>
-							<div class="slide" >
-								<div precentage="70%">
-									<span>70%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Ajax
-							</div>
-							<div class="slide" >
-								<div precentage="95%">
-									<span>95%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Json
-							</div>
-							<div class="slide" >
-								<div precentage="100%">
-									<span>100%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Wordpress
-							</div>
-							<div class="slide" >
-								<div precentage="70%">
-									<span>70%</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="skills-container-group">
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Mysql
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name long-skill-name">
-								<div class="ribbon"></div>
-								C# Programming For Unity Game Development
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Java GUI
-							</div>
-							<div class="slide" >
-								<div precentage="70%">
-									<span>70%</span>
-								</div>
-							</div>
-						</div>
-						<div class="skill-card">
-							<div class="skill-name">
-								<div class="ribbon"></div>
-								Git and Github
-							</div>
-							<div class="slide" >
-								<div precentage="80%">
-									<span>80%</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<button class="next">
-					<i class="far fa-arrow-alt-circle-right"></i>
-				</button>
-			</div>
-		</div>
-		<!-- End Skills -->
-		<div id="projects" class="projects">
-			<h1>
-				<span>Projects</span>
-			</h1>
-			<div class="projects-cotainer">
-				<div class="project-box" title="Click To Open Site">
-					<a href="https://b-ecommerce.000webhostapp.com/" target="_blank">
-						<div class="ribbon"></div>
-						<div class="project-name">
-							Ecommerce Website
-						</div>
-						<div class="project-skills">
-							<ul>
-								<li>HTML</li>
-								<li>HTML5</li>
-								<li>CSS</li>
-								<li>CSS3</li>
-								<li>Jquery</li>
-								<li>Bootstrap</li>
-								<li>PHP</li>
-								<li>Laravel</li>
-								<li>Ajax</li>
-								<li>Json</li>
-							</ul>
-						</div>
-					</a>
-				</div>
-				<div class="project-box" title="Click To Open Site">
-					<a href="https://github.com/BadrTarek/Cursed-Castle-Game.git" target="_blank">
-						<div class="ribbon"></div>
-						<div class="project-name">
-							Cursed Castle 
-						</div>
-						<div class="project-skills">
-							<ul>
-								<li>C# Unity 2D Game</li>
-							</ul>
-						</div>
-					</a>
-				</div>
-				<div class="project-box" title="Click To Open Site">
-					<a target="_blank">
-						<div class="ribbon"></div>
-						<div class="project-name">
-							Casher Application  
-						</div>
-						<div class="project-skills">
-							<ul>
-								<li>C# Windows Forms Application </li>
-								<li>Microsoft SQL Server</li>
-							</ul>
-						</div>
-					</a>
-				</div>
 
-			</div>
-		</div>
-		<!--Start Footer-->
-		<div id="contact" class="footer">
-			<div class="footer-container">
-				<div class="footer-box">
-					<ul>
-						<li><i class="fas fa-phone-alt icon"></i> 01004323202</li>
-						<li><i class="fas fa-envelope-open icon"></i> badr.tarek20@gmail.com</li>
-						<li><i class="fas fa-map-marker-alt icon"></i> Cairo</li>
-					</ul>
-				</div>
-				<div class="footer-box">
-					<ul>
+            <div id="about-me"  >
+                <div  class="about-me d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/badr.jpg"/>
+                    </div>
+                    <div>
+                        <h2><span>Badr Tarek</span> Mohammed</h2>
+                        <p>
+                            I am developer with skills in Programming. Eager to bring value to projects through hard work ,commitment to quality and developing my skills.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a target="_blank" class="download-cv text-decoration-none text-center" href="files/CV.pdf" title="PDF" download="files/CV.pdf">
+                                Dowload CV <i class="fas fa-cloud-download-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="education" >
+                <div  class="education d-flex justify-content-center align-items-center flex-wrap">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <span class="d-flex justify-content-center align-items-center"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="d-flex justify-content-center ">Education</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h2><a target="_blank" href="http://www.mti.edu.eg/">Modern University  For Technology & Information </a></h2>
+                        <h3>B.S. in computer science & artificial intelligence at 2022</h2>
+                        <h4>speialization: CS</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills">
+                <div class="all-skills d-flex align-items-center justify-content-center flex-wrap">
+                    <div class="skill-box">
+                        <h6><span>Front-End</span></h6>
+                        <div class="container d-flex flex-wrap  align-items-center ">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <h6><span>Back-End</span></h6>
+                        <div class="container  d-flex flex-wrap  align-items-center" >
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <h6><span>Programming</span></h6>
+                        <div class="container  d-flex flex-wrap  align-items-center" >
+                            <span>C++</span>
+                            <span>C#</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <h6><span>Basic Knowledge On</span></h6>
+                        <div class="container  d-flex flex-wrap  align-items-center" >
+                            <span>Wordpress</span>
+                            <span>Unity Game Development C#</span>
+                            <span>C# Windows Forms Application</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <article id="work-experience" class="work-experience">
+            <div class="section-title">
+                <h1><span>Work Experience</span></h1>
+            </div>
+            <div class="work-container">
+                <div class="work">
+                    <div>
+                        <h2>Web Developer Intern <span>April 2021</span></h2>
+                        <h3><a target="_blank" href="https://www.magdsoft.com/">Magdsoft</a></h3>
+                        <ul>
+                            <li>Worked as back-end developer where developed application for shipping company ( API's , dashboard ) using laravel, API's.</li>
+                            <li>Worked in team-oriented environment for all aspects of product development.</li>
+                            <li>Built API authentication and all API's requests and responses.</li>
+                            <li>Built admin authentication and all dashboard requirements</li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center">                        
+                        <span class="work-link"><a target="_blank" href="https://github.com/BadrTarek/Laravel_Api_Project.git"> <i class="fab fa-github"></i> </a></span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="projects" class="projects">
+            <div class="section-title">
+                <h1><span>Projects</span></h1>
+            </div>
+            <div class="projects-container d-flex justify-content-center flex-wrap">
+                <div class="project">
+                    <div>
+                        <h2>Ecommerce Website<span>January-2021</span></h2>
+                        <ul>
+                            <li>Responsive web application that allows user to know products and their information, order the products.</li>
+                            <li>Dashboard that allows administrator to control the site and the data, know the orders of users</li>
+                            <li>Designed and developed a user interface using HTML, CSS, Bootstrap, Jquery.</li>
+                            <li>Developed through the Laravel framework, MySQL database.</li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center">                        
+                        <span class="project-link"><a target="_blank" href="https://b-ecommerce.000webhostapp.com"> <i class="fas fa-globe-americas"></i> </a></span>
+                        <span class="project-link"><a href="#"> <i class="fab fa-github"></i> </a></span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div>
+                        <h2>Cursed Castle Game<span>July-2020</span></h2>
+                        <ul>
+                            <li>2D war game between player and monster.</li>
+                            <li>The game Developed through unity c#.</li>
+                            <li>Developed monster attacks using AI.</li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center">                        
+                        <span class="project-link"><a href="#"> <i class="fas fa-cloud-download-alt"></i> </a></span>
+                        <span class="project-link"><a target="_blank" href="https://github.com/BadrTarek/Cursed-Castle-Game.git"> <i class="fab fa-github"></i> </a></span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div>
+                        <h2>Teller Application<span>Novamber-2020</span></h2>
+                        <ul>
+                            <li>An Application that allows the teller clerk to create user orders and allows the administrator to control application's data.</li>
+                            <li>The application Developed using C# Windows Forms Application, SQL database.</li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center">                        
+                        <span class="project-link"><a href="#"> <i class="fab fa-github"></i> </a></span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <div class="top-footer d-flex align-items-center flex-wrap justify-content-center">
+                <div class="contact-info d-flex  flex-column justify-content-center">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone-alt icon"></i> 01004323202</li>
+                        <li><i class="fas fa-envelope-open icon"></i> badr.tare20@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt icon"></i> Egypt, Cairo</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-unstyled d-flex flex-row justify-content-center flex-nowrap">
 						<li><a target="_blank" href="https://www.facebook.com/badr.tarek.16"><i class="fab fa-facebook-f"></i></a></li>
 						<li><a target="_blank" href="https://twitter.com/BadrTar02792023?s=08"><i class="fab fa-twitter"></i></a></li>
 						<li><a target="_blank" href="https://github.com/BadrTarek"><i class="fab fa-github"></i></a></li>
-						<li><a target="_blank" href="www.linkedin.com/in/badr-tarek-5778911b9
-"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/badr-tarek-5778911b9"><i class="fab fa-linkedin-in"></i></a></li>
 					</ul>
-					<ul>
-						<li><a class="about-nav" href="#about">About Me</a></li>
-						<li><a class="experience-nav" href="#about">Experience</a></li>
-						<li><a href="#skills">Skills</a></li>
+					<ul class="list-unstyled d-flex justify-content-around flex-wrap">
+						<li><a id="about-me-nav-footer" href="#profile">About Me</a></li>
+						<li><a id="education-nav-footer" href="#profile">Education</a></li>
+                        <li><a id="skills-nav-footer" href="#profile">Skills</a></li>
+                        <li><a href="#work-experience">Work Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
 					</ul>
-				</div>
-			</div>
-			<p>
-				Copyright 2020 &copy; All Right Reserved
-			</p>
-		</div>
-		<!--End Footer-->
-		<script type="text/javascript" src="js/jquery-3.4.1.min.js" ></script>
-		<script type="text/javascript" src="js/all.min.js" ></script>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                Copyright 2020 &copy; All Right Reserved
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/all.min.js" ></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+
 		<script type="text/javascript" src="js/script.js" ></script>
-	</body>
+        
+    </body>
 </html>
