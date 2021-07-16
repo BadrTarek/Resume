@@ -392,7 +392,11 @@ section ul .active a , section ul .active a:hover{
 	-o-border-radius: 2px;
 	border-radius: 2px;
 }
-.about-me div:nth-child(2) p{
+.about-me div:nth-child(2)  p a{
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+.about-me div:nth-child(2) p , .about-me div:nth-child(2) p a{
 	width: 100%;
 	min-height: 230px;
 	font-family: Tahoma;
