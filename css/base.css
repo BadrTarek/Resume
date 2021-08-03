@@ -474,7 +474,8 @@ section ul .active a , section ul .active a:hover{
 	font-size: 19px;
 }
 .skill-box{
-	width: 500px;
+	/* width: 500px; 9**************************/
+	width: 100%;
 	min-height: 200px;
 	margin: 5px;
 }
